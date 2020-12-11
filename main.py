@@ -1,6 +1,4 @@
 """ prova de CI/CD"""
-#!/usr/bin/python
-# -*- coding: latin-1 -*-
 import transform
 
 
@@ -8,9 +6,9 @@ def main():
     """ core del la prova"""
     string = input("Introdueix un string:")
 
-    print("Quina transformació vols?")
+    print("Quina transformacio vols?")
     print("[1] Text amb tot majuscules")
-    print("[2] Text amb tot minúscuies")
+    print("[2] Text amb tot minuscuies")
     print("[3] Text capitalitzat ")
 
     opcio = input("opció escollida: ")
