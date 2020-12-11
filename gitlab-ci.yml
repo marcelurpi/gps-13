@@ -1,0 +1,29 @@
+name: python-ci
+
+on:
+  pull_request:
+    branches: [ master ]
+
+stages:
+  - run
+  - test
+  - analysis
+
+run-code-job:
+  stage: run
+  script:
+    - echo "Running"
+    - python main.py
+
+test-code-job:
+  stage: test
+  script:
+    - echo "Testing"
+    - python test.py
+
+analysis-code-job:
+  stage: analysis
+  script:
+    - echo "Analysing"
+    - pylint main.py
+
