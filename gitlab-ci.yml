@@ -1,0 +1,20 @@
+stages:
+  - run
+  - test
+  - analysis
+
+run-code-job:
+  stage: run
+  script:
+    - python main.py
+
+test-code-job:
+  stage: test
+  script:
+    - python test.py
+
+analysis-code-job:
+  stage: analysis
+  script:
+    - pylint main.py
+
